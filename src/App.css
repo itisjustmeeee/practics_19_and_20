@@ -135,7 +135,7 @@
   color: #666;
 }
 
-.task-list {
+.technology-card {
   background: linear-gradient(135deg, #e2dfb0, #c9e39b);
   border-radius: 10px;
   padding: 20px;
@@ -143,18 +143,18 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.task-list h2 {
+.technology-card h2 {
   margin: 0 0 20px 0;
   color: #333;
 }
 
-.task-list ul {
-  list-style: none;
+.technology-card ul {
+  list-style: outside;
   padding: 0;
   margin: 0;
 }
 
-.task-list li {
+.technology-card li {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -164,21 +164,29 @@
   transition: background-color 0.2s;
 }
 
-.task-list li.completed {
-  background-color: #93ea5a;
-  border-left: 4px solid #4caf50;
+.technology-card li.completed {
+  background: linear-gradient(135deg, #96d4b0, #7692df);
+  border-left: 4px solid #43dd49;
+  border-bottom: 4px solid #43dd49;
 }
 
-.task-list li.pending {
-  background-color: #3c68e2;
-  border-left: 4px solid #2e21f0;
+.technology-card li.in-progress {
+  background: linear-gradient(135deg, #ead872, #d6924d);
+  border-left: 4px solid #f05821;
+  border-bottom: 4px solid #f05821;
 }
 
-.task-list li:hover {
+.technology-card li.not-started {
+  background: linear-gradient(135deg, #e81616, #e57133);
+  border-left: 4px solid #ff0000;
+  border-bottom: 4px solid #ff0000;
+}
+
+.technology-card li:hover {
   opacity: 0.8;
 }
 
-.task-list span {
+.technology-card span {
   flex: 1;
   color: #333;
 }

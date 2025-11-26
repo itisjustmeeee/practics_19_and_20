@@ -1,7 +1,7 @@
 import './App.css';
 import Greeting from './Greeting';
 import UserCard from './UserCard';
-import TaskList from './TaskList';
+import TechnologyCard from './TechnologyCard';
 import Photo_profile from './assets/photo_profile.jpg';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
         avatarUrl={Photo_profile}
         isOnline={true} 
       />
-      <TaskList />
+      <TechnologyCard />
     </div>
   );
 }
