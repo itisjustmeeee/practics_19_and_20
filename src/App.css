@@ -136,59 +136,10 @@
 }
 
 .technology-card {
-  background: linear-gradient(135deg, #e2dfb0, #c9e39b);
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.technology-card h2 {
-  margin: 0 0 20px 0;
-  color: #333;
-}
-
-.technology-card ul {
-  list-style: outside;
-  padding: 0;
-  margin: 0;
-}
-
-.technology-card li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-  margin: 10px 0;
-  border-radius: 5px;
-  transition: background-color 0.2s;
-}
-
-.technology-card li.completed {
-  background: linear-gradient(135deg, #96d4b0, #7692df);
-  border-left: 2px solid #5c70e7;
-  border-bottom: 2px solid #5c70e7;
-}
-
-.technology-card li.in-progress {
-  background: linear-gradient(135deg, #ead872, #d6924d);
-  border-left: 2px solid #f05821;
-  border-bottom: 2px solid #f05821;
-}
-
-.technology-card li.not-started {
-  background: linear-gradient(135deg, #e81616, #e57133);
-  border-left: 2px solid #0f4cda;
-  border-bottom: 2px solid #0f4cda;
-}
-
-.technology-card li:hover {
-  opacity: 0.8;
-}
-
-.technology-card span {
-  flex: 1;
-  color: #333;
+    font-family: system-ui, sans-serif;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
 }
 
 .tech-list {
@@ -230,4 +181,41 @@
     margin: 0;
     color: #555;
     line-height: 1.5;
+}
+
+.status-label {
+    font-size: 0.8em;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.completed {
+    border-color: #86efac;
+    background: #ecfdf5;
+}
+
+.completed .status-label {
+    background: #86efac;
+    color: #166534;
+}
+
+.in-progress {
+    border-color: #fcd34d;
+    background: #fffbeb;
+}
+
+.in-progress .status-label {
+    background: #fcd34d;
+    color: #92400e;
+}
+
+.not-started {
+    border-color: #db3b3b;
+    background: #fef2f2;
+}
+
+.not-started .status-label {
+    background: #db3b3b;
+    color: #991b1b;
 }
