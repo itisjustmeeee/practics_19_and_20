@@ -22,7 +22,7 @@ function TechnologyCard() {
                       className={`tech-item ${statusClass[technologie.status] || "unknown"}`}
                     >
                         <div className="tech-header">
-                            <h3>
+                            <h3 className="icon">
                                 {technologie.icon}{technologie.title}
                             </h3>
                             <span className="status-label">
