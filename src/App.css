@@ -166,8 +166,8 @@
 
 .technology-card li.completed {
   background: linear-gradient(135deg, #96d4b0, #7692df);
-  border-left: 2px solid #43dd49;
-  border-bottom: 2px solid #43dd49;
+  border-left: 2px solid #5c70e7;
+  border-bottom: 2px solid #5c70e7;
 }
 
 .technology-card li.in-progress {
@@ -178,8 +178,8 @@
 
 .technology-card li.not-started {
   background: linear-gradient(135deg, #e81616, #e57133);
-  border-left: 2px solid #ff0000;
-  border-bottom: 2px solid #ff0000;
+  border-left: 2px solid #0f4cda;
+  border-bottom: 2px solid #0f4cda;
 }
 
 .technology-card li:hover {
