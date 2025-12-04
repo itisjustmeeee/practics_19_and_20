@@ -31,7 +31,7 @@ function App() {
         const notCompleted = technologies.filter(t => t.status !== 'completed');
         if (notCompleted.length === 0) return;
         const random = notCompleted[Math.floor(Math.random() * notCompleted.length)];
-        setTechnologies(prev => prev.map(t => t.id === random .id ? {...t, status: 'in-pogress'}: t));
+        setTechnologies(prev => prev.map(t => t.id === random.id ? {...t, status: 'in-progress'}: t));
     };
 
     const updateStatus = (id) => {

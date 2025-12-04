@@ -1,10 +1,10 @@
 import './FilterTabs.css';
 
 const filters = [
-    {id: 'all', label: 'Все', icon: 'All'},
-    {id: 'not-started', label: 'Не начато', icon: 'To Do'},
-    {id: 'in-progress', label: 'В процессе', icon: 'In Progress'},
-    {id: 'completed', label: 'Завершено', icon: 'Done'},
+    {id: 'all', label: 'Все'},
+    {id: 'not-started', label: 'Не начато'},
+    {id: 'in-progress', label: 'В процессе'},
+    {id: 'completed', label: 'Завершено'},
 ];
 
 function FilterTabs({currentFilter, onFilterChange}) {
