@@ -7,7 +7,6 @@ import { useState } from "react";
 import Statistics from './Statistics';
 import QuickActions from './QuickActions';
 import FilterTabs from './FilterTabs';
-import './App.css';
 
 function App() {
 
@@ -35,7 +34,7 @@ function App() {
         setTechnologies(prev => prev.map(t => t.id === random .id ? {...t, status: 'in-pogress'}: t));
     };
 
-    const uppdateStatus = (id) => {
+    const updateStatus = (id) => {
         setTechnologies(prev => prev.map(t => {
             if (t.id ===  id) {
                 const order = ['not-started', 'in-progress', 'completed'];
@@ -72,7 +71,7 @@ function App() {
 
       <main className="tech-grid">
         {filteredTechs.length === 0 ? (
-          <p className="empty-message">Ничего не найдено по фильтру "{filter}"</p>) : (filteredTechs.map(tech => (<TechnologyCard key={tech.id} tech={tech} onStatusChange={uppdateStatus} />))
+          <p className="empty-message">Ничего не найдено по фильтру "{filter}"</p>) : (filteredTechs.map(tech => (<TechnologyCard key={tech.id} tech={tech} onStatusChange={updateStatus} />))
         )}
       </main>
     </div>

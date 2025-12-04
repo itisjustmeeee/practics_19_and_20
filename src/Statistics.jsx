@@ -1,3 +1,4 @@
+import './Statistics.css';
 
 function Statistics({ technologies }) {
     const total = technologies.length;
@@ -30,7 +31,7 @@ function Statistics({ technologies }) {
             <div className='progress-bar'>
                 <div
                 className='progress-fill'
-                style={{width: `${percent}`, background: `linear-gradient(90deg, #fca5a5, #60a5fa, #4ade80)`}} />
+                style={{width: `${percent}%`, background: `linear-gradient(90deg, #fca5a5, #60a5fa, #4ade80)`}} />
                 <span className='percent'>{percent}% завершено</span>
             </div>
             <p className='top-category'>Топ категория: <strong>{topCategory}</strong></p>
