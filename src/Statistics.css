@@ -1,5 +1,4 @@
 .statistics {
-    align-items: center;
     background: white;
     padding: 24px;
     border-radius: 20px;
@@ -20,6 +19,7 @@
 }
 
 .stat-item {
+    align-items: center;
     text-align: center;
     padding: 16px;
     background: linear-gradient(135deg, #f8fafc, #f1f5f9);
