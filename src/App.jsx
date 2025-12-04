@@ -4,7 +4,7 @@ import UserCard from './UserCard';
 import TechnologyCard from './TechnologyCard';
 import Photo_profile from './assets/photo_profile.jpg';
 import { useState } from "react";
-import Statistics from '.Statistics';
+import Statistics from './Statistics';
 import QuickActions from './QuickActions';
 import FilterTabs from './FilterTabs';
 import './App.css';
