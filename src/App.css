@@ -47,16 +47,29 @@
   color: #f8fafc;
   font-family: 'Segoe UI', system-ui, sans-serif;
   padding: 20px;
-  box-sizing: border-box;  
+  box-sizing: border-box;
 }
 
 .App-header {
-  background-color: #697386;
-  padding: 20px;
-  color: black;
   text-align: center;
-  border-radius: 10px;
-  margin-bottom: 20px;
+  margin: 30px 0 40px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 24px;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.App-header h1 {
+  font-size: 3.5em;
+  margin: 0 0 16px 0;
+  font-weight: 800;
+  background: linear-gradient(90deg, #fbbf24, #f87171, #a78bfa, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .App-logo {
